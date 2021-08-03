@@ -1,5 +1,5 @@
 # -- Base Conf --
-baseURL = "http://FOSSFA.github.io"
+baseURL = "https://fossfa.github.io"
 languageCode = "en-us"
 title = "خانه"
 theme = "bookworm"
