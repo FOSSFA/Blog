@@ -4,7 +4,7 @@
     <img loading="lazy" class="w-100 rounded" src="{{ .Params.image | absURL}}" alt="{{.Title}}">
   </a>
   {{end}}
-  <div class="card-body">
+  <div class="card-body" dir="rtl">
     <ul class="card-meta list-inline mb-2">
       <li class="list-inline-item mb-2">
         {{ with site.GetPage (.Params.Author | urlize | lower) }}

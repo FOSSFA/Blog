@@ -1,8 +1,15 @@
 # -- Base Conf --
 baseURL = "http://FOSSFA.github.io"
 languageCode = "en-us"
-title = "FOSSFA"
+title = "خانه"
 theme = "bookworm"
+paginate = "7"
+disqusShortname = "FOSSFA"
+
+# - Post Url - 
+[permalinks]
+  blog = "/:year/:month/:filename/"
+
 
 # ----- Plugins -----
 
@@ -67,7 +74,7 @@ search = false
 mainSections = ["blog"]
 
 # -- Footer --
-copyright = "All Rights Reserved - Under FDL License"
+copyright = "تمامی حقوق محفوظ است ، تحت لایسنس FDL"
 
 # -- cookies --
 [params.cookies]
@@ -88,17 +95,17 @@ icon = "lab la-discord"
 
 # - Mastodon -
 [[params.social]]
-url = ""
+url = "https://fosstodon.org/@FOSSFarsi"
 icon = "lab la-mastodon"
 
-# - matrix -
+# - Matrix -
 [[params.social]]
-url = ""
+url = "https://matrix.to/#/#fossfa:matrix.org"
 icon = "las la-comments"
 
-# - matrix -
+# - Github -
 [[params.social]]
-url = ""
+url = "https://github.com/FOSSFA"
 icon = "lab la-github"
 
 # ----- Menu -----
@@ -108,78 +115,26 @@ icon = "lab la-github"
 [[menu.main]]
 weight = 1
 url = "/"
-name = "Home"
+name = "خانه"
   
 [[menu.main]]
 weight = 3
 url = "about"
-name = "About"
+name = "درباره ما"
   
 [[menu.main]]
 weight = 4
 url = "contact"
-name = "Contact"
-
-[[menu.main]]
-weight = 5
-url = "#"
-name = "Pages"
-hasChildren = true
-
-  [[menu.main]]
-  parent = "Pages"
-  weight = 1
-  url = "author/"
-  name = "Author"
-  
-  [[menu.main]]
-  parent = "Pages"
-  weight = 2
-  url = "tags/"
-  name = "Tags"
-  
-  [[menu.main]]
-  parent = "Pages"
-  weight = 3
-  url = "categories/"
-  name = "Category"
-  
-  [[menu.main]]
-  parent = "Pages"
-  weight = 4
-  url = "elements/"
-  name = "Elements"
-  
-  [[menu.main]]
-  parent = "Pages"
-  weight = 5
-  url = "privacy/"
-  name = "Privacy"
-  
-  [[menu.main]]
-  parent = "Pages"
-  weight = 6
-  url = "terms-conditions/"
-  name = "Terms & Conditions"
+name = "ارتباط با ما"
 
 # -- Footer Menu --
 
 [[menu.footer]]
 weight = 1
-url = "about/"
-name = "About"
+url = "author/"
+name = "نویسندگان"
 
 [[menu.footer]]
 weight = 2
-url = "author/"
-name = "Authors"
-
-[[menu.footer]]
-weight = 3
 url = "privacy/"
-name = "Privacy"
-
-[[menu.footer]]
-weight = 4
-url = "terms-conditions/"
-name = "Terms & Conditions"
+name = "امنیت و حریم خصوصی"

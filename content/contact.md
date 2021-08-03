@@ -1,5 +1,5 @@
 ---
-title: "Contact"
+title: "ارتباط با ما"
 layout: "contact"
 draft: false
 ---
