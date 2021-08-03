@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/FOSSFA/FOSSFA.github.io.git
+	branch = Site
