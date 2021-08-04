@@ -15,12 +15,13 @@ disqusShortname = "FOSSFA"
 
 # -- CSS Plugins --
 [[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
+link = "https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css"
 [[params.plugins.css]]
 link = "plugins/line-awesome/css/line-awesome.min.css"
 [[params.plugins.css]] # Font Vazir
 link ="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v29.1.0/dist/font-face.css"
-
+[[params.plugins.css]] # Custom Css
+link="plugins/customCss/main.css"
 # -- JS Plugins --
 [[params.plugins.js]]
 link = "plugins/jquery/jquery.min.js"

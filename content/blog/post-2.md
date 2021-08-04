@@ -1,11 +1,11 @@
 ---
-title: "Become a morning person with the help of this a alarm clock"
+title: "تست فارسی | en test"
 description: "meta description"
 image: "images/post/03.jpg"
 date: 2021-01-25T11:33:57+06:00
 author: "Gnkalk"
-tags: ["Alarm", "Clock"]
-categories: ["LifeStyle"]
+tags: ["Alarm", "Clock", "test"]
+categories: ["LifeStyle", "Linux"]
 draft: false
 ---
 
@@ -27,3 +27,8 @@ draft: false
 
 1. لورم ایپسوم 
 2. لورم ایپسوم 
+3. `lorem ipsum`
+
+`lormsm ad ads`
+
+تستستتستستس

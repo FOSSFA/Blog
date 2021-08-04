@@ -1,0 +1,10 @@
+code{
+    direction: ltr;
+    float: left;
+    text-align : left;
+}
+
+.header-nav{
+    direction: rtl;
+    float: right;
+}
