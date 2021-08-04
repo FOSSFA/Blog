@@ -1,6 +1,6 @@
 # -- Base Conf --
 baseURL = "https://fossfa.github.io"
-languageCode = "en-us"
+languageCode = "fa-IR"
 title = "خانه"
 theme = "bookworm-FE"
 paginate = "7"
@@ -22,6 +22,7 @@ link = "plugins/line-awesome/css/line-awesome.min.css"
 link ="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v29.1.0/dist/font-face.css"
 [[params.plugins.css]] # Custom Css
 link="plugins/customCss/main.css"
+
 # -- JS Plugins --
 [[params.plugins.js]]
 link = "plugins/jquery/jquery.min.js"
@@ -75,7 +76,7 @@ search = false
 mainSections = ["blog"]
 
 # -- Footer --
-copyright = "تمامی حقوق محفوظ است ، تحت لایسنس FDL"
+copyright = "تمامی حقوق محفوظ است ، تحت لایسنس [FDL](http://www.gnu.org/licenses/fdl-1.3.html)"
 
 # -- cookies --
 [params.cookies]

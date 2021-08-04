@@ -1,6 +1,6 @@
 ---
-title: "Blog"
-description: "meta description"
+title: "بلاگ"
+description: "فوسفا بلاگ"
 draft: false
 ---
 
