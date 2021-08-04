@@ -2,13 +2,13 @@
 baseURL = "https://fossfa.github.io"
 languageCode = "en-us"
 title = "خانه"
-theme = "bookworm"
+theme = "bookworm-FE"
 paginate = "7"
-disqusShortname = "FOSSFA"
+disqusShortname = "fossfa"
 
 # - Post Url - 
 [permalinks]
-  blog = "/:year/:month/:filename/"
+  blog = "/blog/:year/:month/:filename/"
 
 
 # ----- Plugins -----
