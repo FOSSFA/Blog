@@ -13,4 +13,4 @@ social:
   link: "https://github.com/gnkalk"
 ---
 
-FOSSFA Founder
+بنیان گذار فوسفا
