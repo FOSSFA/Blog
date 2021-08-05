@@ -4,7 +4,7 @@ description: "آموزش شخصی سازی میزکار kde به شکل مک OSX
 image: "images/post/KDECustomize.png"
 date: 2021-03-01T16:43:08+04:30
 author: "Gnkalk"
-tags: ["KDE", "customize"]
+tags: ["KDE", "customize", "kde-customize"]
 categories: ["Linux", "BSD"]
 draft: false
 ---
@@ -71,6 +71,18 @@ draft: false
 سپس در دو سمت صفحه نمایش فلش هایی وجود دارن که آنها را به این شکل تنظیم کنید
 
 ![](/images/post/kdecustomize/setpanelsizeformac.png)
+
+سپس در وسط صفحه دسکتاپ راست کلیت کرده گزینه add panelرا انتخاب کنیدو سپس گزینهapplication Menu barانتخاب کنید
+
+بعد بر روی پنل پایینی راست کلیک کرده و گزینه edit(ویرایش)را انتخاب کنید
+
+تمام گجت هایی که در پنل وجود دارد را حذف کنید
+
+برای اضافه کردن گجت به پنل ها بر روی پنل راست کلیک کرده و گزینه edit(ویرایش)را انتخاب کنید
+
+سپس گزینه Add widget را انتخاب کنید حالا ویجت هارا به سمت پنل ها کشیده
+
+![](/images/post/kdecustomize/addwighet.png)
 
 در پنل بالایی ویجت ها را به ترتیب از سمت راست در پنل قرار دهید :Notification , search , chili clock v
 , sound volume , Network , netspeed و System tray قرار داده و سپس برای قرار دادن فاصله (در حالت ادیت پنل بالایی)بر روی گزینه add spacerکلیک کنید این فاصله را در سمت چپ قرار دهید و بعد از آن گلوبال منو ، Windows title و در آخر kpple menu را قرار دهید.
