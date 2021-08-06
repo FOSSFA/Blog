@@ -8,8 +8,9 @@ disqusShortname = "fossfa"
 
 # - Post Url - 
 [permalinks]
-  blog = "/blog/:year/:month/:filename/"
+  # This section is only for working aliases properly
 
+uglyurls = true
 
 # ----- Plugins -----
 

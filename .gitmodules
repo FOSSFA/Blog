@@ -5,3 +5,6 @@
 [submodule "themes/bookworm-FE"]
 	path = themes/bookworm-FE
 	url = https://github.com/FOSSFA/bookworm-FE
+[submodule "content/blog/course"]
+	path = content/blog/course
+	url = https://github.com/FOSSFA/FOSSFA-Course.git
