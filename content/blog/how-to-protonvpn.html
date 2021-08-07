@@ -1,0 +1,53 @@
+---
+title: "آموزش نصب و راه اندازی ProtonVPN"
+description: "اگه شما از لینوکس استفاده میکنید و نمیدونید از چه vpn ای استفاده کنید،‌این آموزش رو از دست ندید !!!"
+image: "images/post/protonvpnlinux.png"
+date: 2021-04-10T16:43:08+04:30
+author: "Amir"
+tags: ["Protonvpn", "Learn"]
+categories: ["Linux"]
+draft: false
+---
+
+<p>اگه شما از لینوکس استفاده میکنید و نمیدونید از چه فیلتر شکن ای استفاده کنید،‌این آموزش رو از دست ندید !!!</p>
+<p>خب، توی این اموزش قراره از proton vpn استفاده بکنیم، که برای اندروید، ویندوز و لینوکس در دسترسه. خب اول بریم ببینیم چجوری باید نصبش بکنیم:</p>
+<p>برای نصب proton vpn به این بسته ها نیاز داریم:</p>
+<ul>
+<li>openvpn</li>
+<li>python 3.5 به بالا</li>
+<li>dialog</li>
+<li>pip for python3</li>
+</ul>
+<h4>برای نصب این بسته ها داخل ارچ، مانجارو :</h4>
+<pre><code>sudo pacman -S openvpn dialog python-pip python-setuptools</code></pre>
+<pre><code>sudo pip3 install protonvpn-cli</code></pre>
+<p>مطمعن بشید ک pip رو با سودو اجرا میکنید تا کامل روی سیستم نصب بشه و این دستور رو با sudo بشناسه.</p>
+<h4>روی سوزه:</h4>
+<pre><code>sudo zypper in -y openvpn dialog python3-pip python3-setuptoolssudo pip3 install protonvpn-cli</code></pre>
+<h4>روی دبیان/اوبونتو/مینت و بقیه دبیان بیس ها:</h4>
+<pre><code>sudo apt install -y openvpn dialog python3-pip python3-setuptoolssudo pip3 install protonvpn-cli</code></pre>
+<p>مرحله ی بعد اینه که یه اکانت برای خودتون درست بکنید. به سایت پروتون وی پی ان برید (گوگل بزنید proton vpn) و با یکی از این افزونه های پروکسی مرورگر سایت رو باز کنید و حساب خودتون رو بسازید.</p>
+<p>بعدش باید لاگین بکنید و برید به بخش account و داخل قسمت OpenVPN/IKEv2 username میتونید رمز و پسوردی که توی قسمت بعدی برای لاگین کردن نیاز داریم رو ببنید.</p>
+<p>خب حالا ک پروتون وی پی ان نصب شدش باید توی برنامه با این دستور لاگین بکنید:</p>
+<pre><code>sudo protonvpn init</code></pre>
+<p>بعد ازتون رمز و پسورد رو میخواد(پسورد رو روی صفحه نشون نمیده). و وقتی که موقع تایید کردن دکمه اینتر رو میزنید، این ارور رو میبنید:</p>
+<pre><code>[!] There was an error connecting to the ProtonVPN API.[!] Please make sure your connection is working properly!</code></pre>
+<p>دلیلش چیه ؟  اینه ک پروتون وی پی ان api های خودشون رو از protonmail به protonvpn تغییر دادن و این دامنه برای ما فیلتره ): . خب چیکار کنیم ؟ با من باشید تا بهتون بگم (: .</p>
+<p>برای تغییر api به protonmail باید فایل utils.py  رو ادیت بکنیم.قبلش باید بفهمیم که پروتون توی کدوم پوشه نصب شده،پس یا زدن این دستور محل نصب شدنش رو میگه:</p>
+<pre><code>pip3 show protonvpn-cli</code></pre>
+<p>خب، توی خروجی باید همچین خطی نوشته شده باشه:</p>
+<pre><code>Location: /usr/lib/python3.9/site-packages</code></pre>
+<p>این محل نصب برنامه ماست. حالا با nano یا vim یا هر ادیتوری که دوست دارید فایل زیر رو ویرایش بکنید(sudo یادتون نره ):</p>
+<pre><code>sudo vim /usr/lib/python3.9/site-packages/protonvpn-cli/utils.py</code></pre>
+<p><mark class="wp-block-coblocks-highlight__content">ممکنه نام دایرکتوری protonvpn_cli باشه...</mark></p>
+<p>خب حالا چی رو باید تغییر بدیم ؟؟؟ توی خط 27 همچین چیزی رو مشاهده میکنید:</p>
+<pre><code>api_domain = get_config_value("USER", "api_domain").rstrip("/")</code></pre>
+<p>حالا باید و این رو خط رو با کد زیرجایگزین بکنیم(نگران نباشید مشکلی پیش نمیاد):</p>
+<pre><code>api_domain = "https://api.protonmail.ch"</code></pre>
+<p>خب، فایل رو ذخیره میکنیم و دوباره دستور sudo protonvpn init رو میزنیم، به احتمال 99 درصد باید شما پیام زیر رو ببنید:</p>
+<pre><code>Done! Your account has been successfully initialized.</code></pre>
+<p>خب همه چیز درسته و شما میتونید با استفاده از دستور های زیر به وی پی ان وصل بشید:</p>
+<img src="/images/post/protonvpncommands.png" alt="">
+<p>برای کانکت شدن به سریع ترین سرور هم از دستور زیر استفاده کنید :</p>
+<pre><code>sudo protonvpn c -f</code></pre>
+<p>مرسی از اینکه تا اینجا با من بودید، اگه سوال یا پیشنهادی دارید میتونید زیر همین پست بپرسید. شاد باشید(:</p>
