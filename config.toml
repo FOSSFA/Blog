@@ -1,10 +1,9 @@
 # -- Base Conf --
-baseURL = "https://fossfa.github.io"
+baseURL = "https://fossfa.github.io/"
 languageCode = "fa-IR"
 title = "خانه"
 theme = "bookworm-FE"
 paginate = "7"
-disqusShortname = "fossfa"
 
 # - Post Url - 
 [permalinks]
@@ -59,7 +58,12 @@ color_primary = "#01AD9F"
 # ----- Theme Parameters -----
 [params]
 
-# -- Logo and Favicon
+# -- Comment --
+Commentrepo = "FOSSFA/FOSSFA.github.io"
+Commenttheme = "github-light"
+Commentlabel = "Comment"
+
+# -- Logo and Favicon --
 logo = "images/logo.png"
 logo_height = "50px"
 favicon = "images/logo.png"
