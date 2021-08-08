@@ -1,0 +1,34 @@
+---
+title: "نیم نگاهی به توزیع Void Linux"
+description: "سلام دوستان امروز قصد معرفی Void Linux رو دارم امیدوارم از این مقاله استفاده ی لازم رو ببرید..."
+image: "images/post/voidlinux-reviews.jpg"
+date: 2021-07-09T16:43:08+04:30
+author: "DarkLinux"
+tags: ["VoidLinux", "Reviews"]
+categories: ["Linux"]
+draft: false
+---
+
+<p>سلام دوستان امروز قصد معرفی Void Linux رو دارم امیدوارم از این مقاله استفاده ی لازم رو ببرید.</p>
+<p>Void Linux یه سیستم عامل قدرتمند و خیلی کم مصرفه چون که از <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Runit" data-type="URL" data-id="https://en.wikipedia.org/wiki/Runit" target="_blank">Runit</a> استفاده میکنه و به این صورت دیگه خبری از <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Systemd" data-type="URL" data-id="https://en.wikipedia.org/wiki/Systemd" target="_blank">SystemD</a> نیست ،در واقع VoidLinux از توزیع هایی به شمار میره که از Runit استفاده میکنه. اینیت تاثیر زیادی بر روی سیستم عامل میزاره و باعث میشه سرعت بوت و.. تغییر پیدا کنه ، در اینجا رانیت عملکرد بهتری نسبت به SystemD داره اما ممکنه به دلیل ناسازگاری برخی از نرم افزارها برای کاربران تازه وارد مشکل ایجاد کنه و به همین دلیل Void توزیع مناسبی برای کاربران مبتدی نیست!</p>
+<img src="/images/post/Linux-distroreviews/systemd-bootlog.png" alt="">
+<p><strong>خب حالا init چیه؟</strong> اینیت یه service manager هست که بعد از کرنل اصلی ترین بخش یه سیستم عامل به حساب میاد یعنی شما میتونین با استفاده ازش سرویس ها رو stop کنید start کنید خاموش کنید و روشن کنید.<br>اینیت در سیستم عامل های کلوز سورس به شدت محدود شده تره به عنوان مثال در اندروید تا زمانی که اون نرمافزار رو پاک نکنید امکان متوقف کردن سرویسش رو ندارید..</p>
+<img src="/images/post/Linux-distroreviews/void-xbps-install.png" alt="">
+<p>پکیج منیجر Void Linux پکیج منیجر سریع و پر قدرت XBPS هست ، این پکیج منیجر در اصل به نوعی چندین پکیج منیجر است به طور ساده هر بخش از XBPS یک اپ جدا حساب میشود و این باعث میشود این پکیج منیجر دارای سراعت بسیار زیادی باشد در حدی شاید شما اصلا نصب پکیج را احساس نکنید!<br>برای تجربه بهتر XBPS توصیه میشود از Vpm استفاده کنید.. Vpm نه تنها دستور هارا ساده تر میکند بلکه به طور خودکار برخی از پکیج هارا از طریق پورتیج نصب میکند و این باعث میشود کمتر کسی با مشکل کمبود پکیج مواجه شود.</p>
+<p>اما کار با رانیت دشوار نیست ، برای مثال برای فعال کردن یه سرویس کافیه بزنید</p>
+<pre><code>sudo ln -s /etc/sv/your service name /var/service</code></pre>
+<p>و برای غیر فعال کردن یه سرویس کافیه اونو حذف کنید.</p>
+<pre><code>sudo rm /var/service/your service name</code></pre>
+<p>ولی برای تجربه بهتر و کامل تر کردن رانیت توصیه میشه از VSV که در مخازن Void موجود است استفاده کنید.</p>
+<pre><code>sudo vsv sudo vsv up servicenamesudo vsv down servicename</code></pre>
+<p>مصرف سخت افزار در ووید لینوکس بسیار بهینه است و به طور مثال مصرف رم در میزکار های سبکی مانند xfce به زیر 300 مگ رسیده و مصرف میزکار های پر مصرف همانند گنوم به زیر 700 مگ؟!</p>
+<p><mark><strong>نکته</strong>! برای درست کار کردن void حتما باید dbus را فعال کنید برای فعال کردن dbus میتونید از دستور زیر کمک بگیرید.</mark></p>
+<pre><code>sudo ln -s /etc/sv/dbus /var/service</code></pre>
+<p>بعد از فعال کردن سیستم خود را ریستارت کنتید.</p>
+<p>و برای افزودن مخازن جانبی Void Linux میتونید از دستور زیر استفاده کنید.</p>
+<pre><code># VPM
+sudo vpm in void-nonfree-repo void-multilib-repo void-multilib-nonfree-repo
+# XBPS
+sudo xbps-install -S void-nonfree-repo void-multilib-repo void-multilib-nonfree-repo
+</code></pre>
+<p>امیدوارم این مقاله براتون مفید بوده باشه.</p>
