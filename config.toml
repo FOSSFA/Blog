@@ -58,6 +58,9 @@ color_primary = "#01AD9F"
 # ----- Theme Parameters -----
 [params]
 
+# -- SiteTitle --
+SiteTitle = "فوسفا"
+
 # -- Comment --
 Commentrepo = "FOSSFA/FOSSFA.github.io"
 Commenttheme = "github-light"
