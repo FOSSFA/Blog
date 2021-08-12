@@ -1,6 +1,93 @@
 ---
-title: "Part1"
-date: 2021-08-08T17:06:12+04:30
-draft: true
+title: "دوره Lpic 1 - پارت اول"
+description: "پارت اول دوره Lpic 1"
+date: 2021-03-12T16:43:08+04:30
+author: "Soheil"
+tags: ["Lpic", "Course", "Lpic-Course"]
+categories: ["Linux"]
+draft: false
 ---
 
+<h4 style="text-align: left;"><span style="background-color: #000000; color: #ecf0f1;"><span style="color: #ecf0f1;">  part 1</span> </span></h4>
+<h4 style="text-align: left;"> </h4>
+<ul>
+<li><strong>موضوع این پارت شامل : شناسایی و تنظیم سخت افزار ها </strong></li>
+</ul>
+<ul>
+<li><strong>در اول ما باید معنی این دو واژه را بدانیم</strong></li>
+</ul>
+<ol>
+<li><strong>hotplug</strong></li>
+<li><strong>coldplug</strong></li>
+</ol>
+<ul>
+<li><strong>hotplug</strong> به این معنی این است وقتی سیستم در حالت روشن قرار دارد بتوانیم سخت افزار هایی مانند  : <strong>USB</strong> , <strong>HARD</strong> , <strong>WIRELESS</strong> , ... به ان متصل کنیم</li>
+</ul>
+<ul>
+<li><strong>coldplug</strong> به معنی این است که باید سیستم در حالت خاموش باشد تا بتوانیم به سخت افزار ها دسترسی پیدا کنیم سخت افزار هایی مانند : <strong>CPU</strong> , <strong>RAM</strong> , <strong>...</strong></li>
+</ul>
+<ul>
+<li>بطور کلی تمام دیوایس ها درون <strong>کرنل لینوکس </strong>قرار دارد ، برای مثال کارت شبکه را تهیه کنیم دیگر نیاز نیست مثل سیستم عامل<strong> ویندوز</strong> <strong>CD</strong> مربوط به دیوایس را نصب کنیم.</li>
+</ul>
+<ul>
+<li><strong>در این قسمت باید با سه مفهوم اشنا شویم ، مفهوم هایی مانند :</strong></li>
+</ul>
+<ol>
+<li><strong>HAL</strong></li>
+<li><strong>DBUS</strong></li>
+<li><strong>UDEV</strong></li>
+</ol>
+<ul>
+<li><strong>HAL</strong> مخفف <strong>hardware abstraction layer</strong> است.</li>
+</ul>
+<ul>
+<li><strong>مفهوم</strong> <strong>HAL </strong>یعنی سیستم عامل لینوکس برای سخت افزار ها نامی مجزا انتخاب می کند که این نام ها جدا از مدل سخت افزار ، نام شرکت و ... است.</li>
+</ul>
+<ul>
+<li><strong>فواید</strong> <strong>HAL :</strong> ما دیگر نیاز نیست وقتی سخت افزار جدید تهیه می کنیم به دنبال نام سخت افزار بگردیم به این دلیل که ما دیگر می دانیم که هر سخت افزار جدیدی به سیستم اضافه می کنیم نامی مجزا دارد.</li>
+</ul>
+<ul>
+<li><strong>برای مثال :</strong> وقتی کارت شبکه را به سیستم متصل کنیم کارت شبکه <strong>wlan0</strong> نام گذاری می شود و اگر کارت شببکه دومی را به سیستم متصل کنیم <strong>wlan1 </strong>نام گذاری می شود و هر تعداد کارت شبکه به سیستم متصل کنیم به همین نحوه است .</li>
+</ul>
+<ul>
+<li><strong>HAL </strong>تمامی دیتا های خود را در <strong>sys/ </strong>ذخیره می کند و ان را کنترل می کند.</li>
+</ul>
+<ul>
+<li><strong>مفهوم DBUS </strong>: یک رابطی است بین نرم افزار و سخت افزار یعنی وقتی نرم افزاری به سخت افزاری نیازمند هست <strong>DBUS </strong>ان سخت افزار را در اختیارش قرار می دهد .</li>
+</ul>
+<ul>
+<li><strong>برای مثال : </strong>وقتی موس را به سیستم متصل می کنیم <strong>DBUS</strong> به رابط گرافیکی خبر می دهد که یک موس به سیستم اضافه شده و می توانیم با موس کار کنیم.</li>
+</ul>
+<ul>
+<li><strong>UDEV وظیفه قانون گذاری در سخت افزار ها را دارد</strong> یعنی روی سخت افزاری وقتی قانون گذاری صورت میگیره توسط <strong>UDEV </strong>بلافاصله بعد وصل شدن به سیستم قانون ها اجرا میشه.</li>
+</ul>
+<ul>
+<li><strong>برای مثال : </strong>ما برای یک <strong>USB را </strong>قانون گذاری می کنیم که وقتی به سیستم متصل شد در <strong>USB ، </strong>... قانون هارو اجرا کند.</li>
+</ul>
+<ul>
+<li>دایرکتوری <strong>dev/ </strong>را <strong>UDEV </strong>کنترل می کند و هر چیزی که در سیستم ما مونت شده باشد در دایرکتوری <strong>dev/ </strong>وجود دارد و می تونیم در همین دایرکتوری قانون گذاری کنیم.</li>
+</ul>
+<ul>
+<li>دایرکتوری<strong> proc/ </strong>دایرکتوری است که بخش عمده ای از <strong>تنظیمات کرنل</strong> در انجا قرار دارد که در این دایرکتوری یک سری تنظیمات و کانفیک ها به شکل دایکتوری در امده است.</li>
+</ul>
+<ul>
+<li>کامند <strong>lsusb </strong>تمام <strong>USB </strong>هایی که به سیستم متصل هستند را نشان می دهد و ممکنه سیستم خیلی از چیزا هایی که <strong>USB </strong>نیستند اما از درگاه <strong>USB </strong>متصل شدند به سیستم را نشان دهد مثل کیبورد ، موس و ...</li>
+</ul>
+<ul>
+<li>کامند <strong>lspci </strong>تمام <strong>pci</strong> های سیستم را نشان می دهد که بسیار ریز بین است.</li>
+</ul>
+<ul>
+<li>کامند <strong>lshw </strong>تمام <strong>hardware </strong>را نشان می دهد .</li>
+</ul>
+<ul>
+<li>کامند <strong>lsmod </strong>تمام ماژول هایی که کرنل ان هارو رول کرده یا ... رو نشون میده برای حذف کردن این مود ها از کامند <strong>rmmod nameMod</strong> استفاده می کنیم.</li>
+</ul>
+<ul>
+<li>برای لود کردن مود باید از کامند<strong> modprobe nameMOD </strong>استفاده می کنیم</li>
+</ul>
+<ul>
+<li>در هر سخت افزاری که می تونه تو خودش دیتا ذخیره کنه مثل هارد و ... دارای یک <strong>uuid </strong>که منحصر به فرد هست برای دیدن <strong>uuid </strong>های هارد سیستم یا ... از کامند  <strong>blkid </strong>استفاده می کنیم.</li>
+</ul>
+<ul>
+<li>امیدوارم این قسمت براتون مفید بوده باشه موفق باشید :)</li>
+</ul>

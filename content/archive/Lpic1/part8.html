@@ -1,6 +1,44 @@
 ---
-title: "Part8"
-date: 2021-08-08T17:06:47+04:30
-draft: true
+title: "دوره Lpic 1 - پارت هشتم"
+description: "پارت هشتم دوره Lpic 1"
+date: 2021-05-05T16:43:08+04:30
+author: "Soheil"
+tags: ["Lpic", "Course", "Lpic-Course"]
+categories: ["Linux"]
+draft: false
 ---
 
+<h3>موضوع این قسمت : package manager rpm , yum</h3>
+<p>برای اینکه یک پکیج با پسوند rpm رو نصب کنیم از کامند زیر استفاده می کنیم : (توجه داشته باشید فلگ U- چک می کنه اگه این نصب نباشه نصب می کنه و یا اگر این پکیج نسخه جدید تر از اون چیزی که نصبه بود این رو نصب می کنه)</p>
+<pre><code><strong>rpm -i package_name.rpm</strong><strong>rpm -U package_name.rpm</strong></code></pre>
+<p>و اگر بخواهیم نرم افزاری را از ریپوزیتوری دانلود و نصب کنیم از کامن زیر استفاده می کنیم : (توجه کنید مدیر بسته yum قبل انیکه شروع کنه به دانلود نرم افزاری که می خواستیم از ریپوزیتوری اول لیست ریپوزیتوری رو اپدیت می کنه)</p>
+<pre><code><strong>yum install package_name</strong></code></pre>
+<p>مسیر فایل ریپوزیتوری های فدورا در مسیر :</p>
+<pre><code><strong>/etc/yum.repos.d/fedora.repo</strong></code></pre>
+<p>نکته : در لینوکس می تونیم با دادن فلگ v- به هر چیز ازش بخوایم راجب اون کاری که می کنه به ما اطلاعات بیشتری بده</p>
+<p>نکته : با دادن فلگ h- در کامند های rpm به ما ظاهر بهتری نشون میده و می تونیم متوجه بشیم که چقدر از کارمون پیش رفته</p>
+<p>قرار دارند و همچنین فایل کانفیگوریش yum در مسیر زیر قرار دارد :</p>
+<pre><code><strong>/etc/yum.conf</strong></code></pre>
+<p>برای حذف پکیج مورد نظرمون از کامند زیر استفاده می کنیم : ( توجه داشته باشید این کامند پکیج هایی که برای نصب این برنامه نصب شدند و بدون پکیج کاربرد ندارند رو این کامند حذف نمی کند)</p>
+<pre><code><strong>rpm -e package_name</strong></code></pre>
+<p>با توجه به این مس‌ءله که yum قبل نصب پکیج ها ریپوزیتوری ها را اپدیت می کند دیگر کامند update ندارد و فقط از کامند زیر استفاده می کند :</p>
+<pre><code><strong>yum upgrade</strong></code></pre>
+<p>با کامند زیر می تونیم از rpm بخوایم پکیج مورد نظرمون رو اپدیت کنه در صورت نصب بود اون پکیج :</p>
+<pre><code><strong>rpm -F package_name</strong></code></pre>
+<p>با کامند زیر می توانیم از نصب بودن پکیج یا بودن اون در ریپوزیتوری ها باخبر شویم :</p>
+<pre><code><strong>yum list package_name</strong></code></pre>
+<p>برای گرفتن اطلاعات در مورد یک پمیج مورد نظر از کامند زیر استفاده می کنیم :</p>
+<pre><code><strong>yum info package_name</strong></code></pre>
+<p>برای سرچ کردن پکیج مورد نظرمون از کامند زیر استفاده می کنیم :</p>
+<pre><code><strong>yum search package_name</strong></code></pre>
+<p>برای اینکه متوجه شویم پکیج مورد نظرمون نصب شده یا خیر از کامند زیر استفاده می کنیم :</p>
+<pre><code><strong>rpm -q package_name</strong></code></pre>
+<p>برای اینکه متوجه شویم یک پکیج به چه پکیج هایی نیاز داره برای نصب شدن از کامند زیر استفاده می کنیم :</p>
+<pre><code><strong>rpm -qR package_name</strong></code></pre>
+<p>برای اینکه لیست دیپندنسی های ی پکیج رو بدست بیاریم از کامند زیر باید استفاده کنیم :</p>
+<pre><code><strong>yum deplist package_name</strong></code></pre>
+<p>برای حذف نصب کردن یک پکیج از کامند زیر استفاده می کنیم :</p>
+<pre><code><strong>yum reinstall package_name</strong></code></pre>
+<p>برای اینکه فایل پکیج مورد نظرمون رو با پسوند rpm دانلود کنیم از کامند زیر استفاده می کنیم :</p>
+<pre><code>yumdownloader package_name</code></pre>
+<h2>موفق باشید ؛)</h2>

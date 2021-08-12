@@ -1,6 +1,28 @@
 ---
-title: "Part5"
-date: 2021-08-08T17:06:28+04:30
-draft: true
+title: "دوره Lpic 1 - پارت پنجم"
+description: "پارت پنجم دوره Lpic 1"
+date: 2021-04-27T16:43:08+04:30
+author: "Soheil"
+tags: ["Lpic", "Course", "Lpic-Course"]
+categories: ["Linux"]
+draft: false
 ---
 
+<p class="wp-block-coblocks-highlight"><mark class="wp-block-coblocks-highlight__content"><strong>موضوع این قسمت :</strong> <strong>install boot manager</strong></mark></p>
+<p><strong>بعد از اینکه سیستم رو روشن می کنیم وارد قسمت بایوس میشیم و بایوس سیستم رو به پست میده تا از سلامت سخت افزار های سیستم باخبر شه و بعد از این تست بایوس سیستم رو به بوت لودر میده </strong></p>
+<p><strong>در دنیای لینوکس بوت لودر های متنوعی وجود دارد از جمله :</strong></p>
+<ul>
+<li><strong>LILO</strong></li>
+<li><strong>GRUB version 1</strong></li>
+<li><strong>GRUB version 2</strong></li>
+</ul>
+<p><strong><strong>lilo</strong></strong> <strong>مخفف LInux LOader است یکی از قدیمی ترین بوت لودر ها هست و بسیار کند عمل می کنه و فایل کانفیگ این بوت لودر در مسیر :</strong></p>
+<pre"><code><strong>/etc/lilo.conf</strong></code></pre>
+<p><strong>grub 1 نسبت به lilo درونش از ماژول های بیشتری استفاده شده و عملکرد به نسبت بهتری به lilo داره و فایل کانفیگش در مسیر :</strong></p>
+<pre"><code><strong>/boot/grub/grub.conf</strong></code></pre>
+<p><strong>grub 2 یک بوت لودر مدرن که در حال حاضر همه ازش استفاده می کنن که مسیر فایل کانفیگش در :</strong></p>
+<pre"><code><strong>/boot/grub/grub.cfg</strong></code></pre>
+<p><strong>برای نصب grub 2 از کامند :</strong></p>
+<pre"><code><strong>grub-install /dev/sd*</strong></code></pre>
+<p><strong>و برای کانفیگ کردن grub 2 از کامند :</strong></p>
+<pre"><code><strong>grub-mkconfig &gt; /boot/grub/grub.cfg</strong></code></pre>

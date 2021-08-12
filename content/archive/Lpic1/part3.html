@@ -1,6 +1,108 @@
 ---
-title: "Part3"
-date: 2021-08-08T17:06:20+04:30
-draft: true
+title: "دوره Lpic 1 - پارت سوم"
+description: "پارت سوم دوره Lpic 1"
+date: 2021-03-24T16:43:08+04:30
+author: "Soheil"
+tags: ["Lpic", "Course", "Lpic-Course"]
+categories: ["Linux"]
+draft: false
 ---
 
+<p style="text-align: left;"><span style="color: #ba372a;"><em><strong>part 3</strong></em></span></p>
+<p style="text-align: right;"><strong>موضوع این قسمت در مورد</strong> : <span style="color: #000000;">ران</span> لول ها ، ریبوت ، شات داون است .</p>
+<ul>
+<li>به وضعیت های مختلف در یک سیستم عامل ران لول می گویند که در لینوکس می توانیم به ران لول های دیگر بریم</li>
+</ul>
+<blockquote>
+<p style="text-align: left;"><em><strong>run level <span style="color: #ba372a;">0</span></strong></em></p>
+</blockquote>
+<ul style="list-style-type: circle;">
+<li style="text-align: right;">ران لول صفر به معنی خاموش بودن سیستم است .</li>
+</ul>
+<blockquote>
+<p style="text-align: left;"><em><strong>run level <span style="color: #ba372a;">1</span></strong></em></p>
+</blockquote>
+<ul style="list-style-type: circle;">
+<li style="text-align: right;">ران لول یک سطح تک یوزر یا تک کاربره میباشد.</li>
+</ul>
+<blockquote>
+<p style="text-align: left;"><em><strong>run level <span style="color: #ba372a;">2</span></strong></em></p>
+</blockquote>
+<ul style="list-style-type: circle;">
+<li style="text-align: right;">ران لول دو سطح دیفالت است مثل همین صفحه گرافیکی که در حالت عادی کاربر درش حضور دارد.</li>
+</ul>
+<blockquote>
+<p style="text-align: left;"><em><strong>run level <span style="color: #ba372a;">3</span></strong></em></p>
+</blockquote>
+<ul style="list-style-type: circle;">
+<li style="text-align: right;">در سیستم های فدورا ، ردهت و ... ران لول سه حالت تکس مود است ( ترمینال )</li>
+</ul>
+<blockquote>
+<p style="text-align: left;"><em><strong>run level <span style="color: #ba372a;">4</span></strong></em></p>
+</blockquote>
+<ul style="list-style-type: circle;">
+<li style="text-align: right;">ران لول جهارم خالی میباشد.</li>
+</ul>
+<blockquote>
+<p style="text-align: left;"><em><strong>run level <span style="color: #ba372a;">5</span></strong></em></p>
+</blockquote>
+<p style="text-align: left;"> </p>
+<ul style="list-style-type: circle;">
+<li style="text-align: right;">در سیستم های فدورا ، ردهت و ... ران لول ۵ مود گرافیکی میباشد یعنی مثل همین صفحه ای که کاربر عادی در اون حضور پیدا می کنه بعد از روشن کردن سیستم .</li>
+</ul>
+<blockquote>
+<p style="text-align: left;"><strong><em>run level <span style="color: #ba372a;">6</span></em></strong></p>
+</blockquote>
+<ul style="list-style-type: circle;">
+<li style="text-align: right;">ران لول ۶ ریبوت است .</li>
+</ul>
+<p style="text-align: right;"> </p>
+<ul>
+<li style="text-align: right;">برای اینکه متوجه بشیم در چه ران لولی هستیم باید از کامند :</li>
+</ul>
+<blockquote>
+<p style="text-align: left;">      <em><strong>runlevel <span style="color: #ba372a;">#~</span></strong></em></p>
+</blockquote>
+<ul>
+<li style="text-align: right;">برای تغییر ران لول در دبیان بیس از کامند :</li>
+</ul>
+<blockquote>
+<p style="text-align: left;"><strong><em>3</em></strong><strong><em> telinit ‍<span style="background-color: #c2e0f4;">#~</span></em></strong></p>
+</blockquote>
+<ul>
+<li style="text-align: right;">برای تغییر ران لول در ارچ بیس از کلید های :</li>
+</ul>
+<blockquote>
+<p style="text-align: left;"><em><strong>Ctrl + Alt + F1 , F2 , F3 , F4 , F5 , F6</strong></em></p>
+</blockquote>
+<ul>
+<li style="text-align: right;">برای ریبوت کردن سیستم باید از کامند :</li>
+</ul>
+<blockquote>
+<p style="text-align: left;"><em><strong> shutdown -r <span style="color: #ba372a;">#~</span></strong></em></p>
+</blockquote>
+<ul>
+<li style="text-align: right;">برای اینکه سیستم رو در زمان مشخصی ریبوت کنیم ( برای مثال دو دقیقه دیگر ) باید از کامند :</li>
+</ul>
+<blockquote>
+<p style="text-align: left;"><em><strong>shutdown -r 2</strong></em><span style="color: #ba372a;"><em><strong> #~</strong></em></span></p>
+</blockquote>
+<ul>
+<li style="text-align: right;">و اگر بخوایم هنگام ریبوت به تمام کاربر های اون سیستم خبر بدیم می تونیم به این صورت عمل کنیم</li>
+</ul>
+<blockquote>
+<p style="text-align: left;"><em><strong>shutdown -r 2 The system will reboot in two minutes</strong></em><span style="color: #ba372a;"><em><strong> #~</strong></em></span></p>
+</blockquote>
+<ul>
+<li style="text-align: right;">باری کنسل کردن کامند ریبوت یا شات داون باید از کامند :</li>
+</ul>
+<blockquote>
+<p style="text-align: left;"><em><strong><em><strong>shutdown -c</strong></em> <span style="color: #ba372a;">#~</span></strong></em></p>
+</blockquote>
+<ul>
+<li style="text-align: right;">برای ارسال پیام به تمام کاربر های سیستم از کامند :</li>
+</ul>
+<blockquote>
+<p style="text-align: left;"><em><strong> wall hello world <span style="color: #ba372a;">#~</span></strong></em></p>
+</blockquote>
+<p style="text-align: right;"><em><strong>موفق باشید :)</strong></em></p>

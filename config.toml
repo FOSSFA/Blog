@@ -1,5 +1,5 @@
 # -- Base Conf --
-baseURL = "https://fossfa.github.io/"
+baseURL = "https://fossfa.ir/"
 languageCode = "fa-IR"
 title = "خانه"
 theme = "bookworm-FE"
@@ -143,5 +143,10 @@ name = "نویسندگان"
 
 [[menu.footer]]
 weight = 2
-url = "privacy/"
-name = "امنیت و حریم خصوصی"
+url = "archive/"
+name = "بایگانی"
+
+# [[menu.footer]]
+# weight = 3
+# url = "privacy/"
+# name = "امنیت و حریم خصوصی"

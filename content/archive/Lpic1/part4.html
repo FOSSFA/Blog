@@ -1,6 +1,131 @@
 ---
-title: "Part4"
-date: 2021-08-08T17:06:24+04:30
-draft: true
+title: "دوره Lpic 1 - پارت چهارم"
+description: "پارت چهارم دوره Lpic 1"
+date: 2021-04-18T16:43:08+04:30
+author: "Soheil"
+tags: ["Lpic", "Course", "Lpic-Course"]
+categories: ["Linux"]
+draft: false
 ---
 
+<p class="wp-block-coblocks-highlight"><mark class="wp-block-coblocks-highlight__content">موضوع این قسمت : طراحی هارد و اشنا میشیم با چند دایرکتوری جدید</mark></p>
+<ul>
+<li><strong>در لینوکس روت ( / ) سر شاخه تمام دایرکتوری ها و فایل ها است و تمام فایل سیستم ها و ... زیر شاخه روت هستند .</strong></li>
+</ul>
+<ul>
+<li><strong>تمام سخت افزار هایی که میشود درون انها دیتا ذخیره کرد مانند : هارد . یو اس بی و ... در یه مکانی در زیر شاخه روت بنام mnt/ مونت میشود . </strong></li>
+</ul>
+<ul>
+<li><strong>bin/ : دایرکتوری است در لینوکس که تمام کامند های لینوکس در ان ذخیره می شود </strong></li>
+</ul>
+<img src="/images/post/course/lpic1/bin.png" alt="">
+<ul>
+<li><strong>boot/ : در دایرکتوری بوت تمام فایل هایی که برای بالا اودمدن سیستم لازمه در دایرکتوری بوت وجود دارد مثل گراب و ...</strong></li>
+</ul>
+<img src="/images/post/course/lpic1/boot.png" alt="">
+<ul>
+<li><strong>dev/</strong> <strong>: در این دایرکتوری تمام دیوایس های سیستم وجود دارد مثل هارد ها . کنسول ها و ...</strong></li>
+</ul>
+<img src="/images/post/course/lpic1/dev.png" alt="">
+<ul>
+<li><strong>etc/ : در دایرکتوری etc تمام کانفیگ های ما وجود دارد و برای تغییر دادن یا کانفیگ کردن هر چیزی باید به این دایرکتوری بیاییم .</strong></li>
+</ul>
+<img src="/images/post/course/lpic1/etc.png" alt="">
+<ul>
+<li><strong>lib/ : در دایرکتوری لیب تمام لایبری های ما وجود دارن که بصورت استاتیک عمل می کنند برای مثال اگر نرم افزاری نیاز به لایبری مورد نظری داشت در این دایرکتوری لایبری رو صدا میزنه</strong> .</li>
+</ul>
+<img src="/images/post/course/lpic1/lib.png" alt="">
+<ul>
+<li><strong>opt/ : در این دایرکتوری برنامه هایی هستن که بخشی از خود لینوکس هستند مثل اراکل و ...</strong></li>
+</ul>
+<ul>
+<li><strong>sbin/ :</strong> <strong>در دایرکتوری sbin کامند های هستن که مهم تر هستند و با دسترسی روت ران می شوند</strong></li>
+</ul>
+<ul>
+<li><strong>tmp/ : دایکتوری tmp دارای حافظه موقت است که یوزر ها بعضی از نرم افزار ها از ان استفاده می کنند و گاهی در حین ریبوت همه چیز هایی که درون ان وجود داشت پاک می شود . </strong></li>
+</ul>
+<ul>
+<li><strong>var/ : در دایکتور ور تمام لاگ فایل ها بکاپ ها دیتابیس ها و ... وجود دارد .</strong></li>
+</ul>
+<img src="/images/post/course/lpic1/var.png" alt="">
+<ul>
+<li><strong>در لینوکس دیسک ها به پارتیشن های جدا گانه تبدیل میشود که این پارتیشن ها در دایرکتوری dev/ وجود دارند لینوکس دیسک اول مارا sda نامگذاری می کند و پارتیشن های دیسک اولمان را sda1 , sda2 ,sda3 , ... نامگذاری می کند .</strong></li>
+</ul>
+<ul>
+<li><strong>ما برای دیدن پارتیشن های دیسکمان می تونیم از ابزار های متنوعی استفاده کنیم بنام </strong></li>
+</ul>
+<ol>
+<li><strong>gparted</strong></li>
+<li><strong>cfdisk</strong></li>
+<li><strong>fdisk</strong></li>
+</ol>
+<ul>
+<li><strong>LVM : نرم افزاریه که یه لایه بین سیستم عامل و هارد ایجاد می کنه که مثلا ما دوتا دیسک یه ترا داریم ال وی ام این دیسک هارو بصورت یه هارد دوتا ترا به سیستم عامل نشون میده ال وی ام دارای سه بخش هست </strong>.</li>
+</ul>
+<ol>
+<li><strong>pv : در این بخش هارد ها یا پارتیشن هایی که می خواهیم به ال وی ام بدهیم وجود دارد.</strong></li>
+<li><strong>vg :</strong> <strong>وقتی فلان تعداد هارد یا پارتیشن کنار هم قرار می گیرند برای مثال دوتا یا سه یا ... یک vg را تشکیل می دهند .</strong></li>
+<li><strong>lv :</strong> <strong>وقتی بخوایم این هارد هارو سیستم عامل به نحو دلخواه خودمون نشان بدهیم یک lv تشکیل میدهیم که سیستم عامل اون رو یک حافظه خالی می بیند.</strong></li>
+</ol>
+<ul>
+<li><strong>برای پارتیشن بندی چهار بخش بطور رایج باید بسازیم بنام </strong></li>
+</ul>
+<ol>
+<li>swap</li>
+<li>boot</li>
+<li>root</li>
+<li>home</li>
+</ol>
+<table>
+<tbody>
+<tr>
+<td>swap</td>
+<td>boot</td>
+<td>root</td>
+<td>home</td>
+</tr>
+<tr>
+<td><strong>دوبرابر رم سیستم</strong> <strong>نهایتا ۸ گی</strong>گ</td>
+<td><strong>بصورت استاندارد ۵۰۰ مگ</strong></td>
+<td><strong>۲۰تا۳۰ گیگ بصورت استاندارد</strong></td>
+<td><strong>بصورت دلخواه</strong></td>
+</tr>
+</tbody>
+</table>
+</figure>
+<ul>
+<li><strong>swap : سواپ به این صورت عمل می کنه وقتی نرم افزاری کل رم رو اشغال می کنه سواپ میاد بخشی از رم به حافظه سواپ میده که نرم افزار ها اجرا بشن اما کند تر </strong></li>
+<li><strong>boot : در این پارتیشن تمام فایل هایی که برای بالا اومدن سیستم نیاز است قرار داره مثل گراب و ... </strong></li>
+<li><strong>root : و در پارتیشن روت تمامی فایل سیستم ها قرار دارد .</strong></li>
+<li><strong>home : پارتیشن هوم فضای ذخیره سازی یوزر است .</strong></li>
+</ul>
+<ul>
+<li><strong>اگر می خواهیم برای یک سرور پاریشن بندی کنیم بسته به نیاز باید این پارتیشن بندی صورت بگیره اما بصورت عمدتا به این صورت پارتیشن بندی می کنند .</strong></li>
+</ul>
+<ol>
+<li>boot</li>
+<li>swap</li>
+<li>root</li>
+<li>usr</li>
+<li>var</li>
+</ol>
+<table>
+<tbody>
+<tr>
+<td>boot</td>
+<td>swap</td>
+<td>root</td>
+<td>usr</td>
+<td>var</td>
+</tr>
+<tr>
+<td>500m</td>
+<td>8G</td>
+<td>20G&amp;40G</td>
+<td>10G</td>
+<td>100G</td>
+</tr>
+</tbody>
+</table>
+</figure>
+<h2><strong>امیدوارم موفق باشید خوشحال میشم نظراتتون رو برام کامنت کنید</strong>.</h2>

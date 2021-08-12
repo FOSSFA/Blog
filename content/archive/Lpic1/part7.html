@@ -1,6 +1,50 @@
 ---
-title: "Part7"
-date: 2021-08-08T17:06:43+04:30
-draft: true
+title: "دوره Lpic 1 - پارت هفتم"
+description: "پارت هفتم دوره Lpic 1"
+date: 2021-05-03T16:43:08+04:30
+author: "Soheil"
+tags: ["Lpic", "Course", "Lpic-Course"]
+categories: ["Linux"]
+draft: false
 ---
 
+<p>موضوع این قسمت : package manager debian</p>
+<p>برای نصب یک نرم افزار در دبین بیس از روی ریپوزیتوری باید از کامند زیر استفاده کنیم</p>
+<pre><code><strong>sudo apt-get install nameScript</strong></code></pre>
+<p>به منبع یا مجموع نرم افزار های قابل نصب ریپوزیتوری می گویند .</p>
+<p>در بعضی مواقع نصب یک پکیج مشاهده میشه که این پکیج برای کار کردن نیاز به چند پکیج دیگر دارد به این عملکرد دیپندنسی می گویند که اگر مایل به نصب ان پکیج های مورد نیاز باشیم می تونیم Y را بزنیم تا ان پکیج ها را هم نصب کند تا برنامه مورد نظرمون اجرا بشه</p>
+<p>تمامی پکیج ها در توزیع های دبین بیس پسوند .deb دارد برای اینکه پکیجی رو که می خوایم دانلود کنیم بدون اینکه نصب بشه از کامند زیر استفاده می کنیم</p>
+<pre><code><strong>sudo apt-get install -d nameScript</strong></code></pre>
+<p>برای اپدیت کردن ریپوزیتوری های سیستم در دبین بیس به کامند زیر نیاز داریم :</p>
+<pre><code><strong>sudo apt-get update </strong></code></pre>
+<p>و با کامند زیر چک می کنیم اپدیتی برای نرم افزار های سیستم اومده یا خیر از کامند :</p>
+<pre><code><strong>sudo apt-get upgrade</strong></code></pre>
+<p>برای حذف یک پکیج در دبین بیس از کامند :</p>
+<pre><code><strong>sudo apt-get remove nameScript</strong></code></pre>
+<p>کامند زیر باعث می شود برنامه های که بهم دیپندنسی دارن هم حذف بشن همراه اون پکیج مورد نظر</p>
+<pre><code><strong>sudo apt-get autoremove nameScript</strong></code></pre>
+<p>برای سرچ کردن پکیجی در لینوکس از کامند :</p>
+<pre><code><strong>sudo apt-cash search nameScript</strong></code></pre>
+<p>به تازگی در دبین بیس ها aptitude امده که کار ما را بسیار اسون کرده برای مثال کامند حذف ، نصب ، سرچ و ... را در زیر مشاهده کنید : ( در aptitude show اطلاعاتی راجب پکیج به ما می دهد )</p>
+<pre><code><strong>sudo aptitude install nameScript</strong><strong>sudo aptitude</strong> <strong>remove nameScript</strong><strong>sudo aptitude search nameScript</strong><strong>sudo aptitude show namescript </strong></code></pre>
+<p>تمام این کانفیگ های <strong>apt</strong> در مسیر زیر قرار دارند :</p>
+<pre><code><strong>/etc/apt/apt.conf</strong></code></pre>
+<p>برای reconfigure کردن بعضی سرویس و ... باید از کامند زیر استفاده کنیم</p>
+<pre><code><strong>dpkg-reconfigure NameService &amp; NameScript</strong></code></pre>
+<p>برای دیدن محتویات یک پکیج دبین باید از کامند زیر استفاده کنیم</p>
+<pre><code><strong>dpkg --contents file_Debian.deb</strong></code></pre>
+<p>برای دیدن وضعیت یک پکیج از کامند زیر استفاده می کنیم</p>
+<pre><code><strong>dpkg -s nameScript</strong></code></pre>
+<p>برای پاک کردن تمام کانفیگ های یه پکیج و تمام فایل های اون پکیج از کامند زیر استفاده می کنیم</p>
+<pre><code><strong>dpkg -P nameScript</strong></code></pre>
+<p>برای اینکه به ما نشون بده برای نصب پکیج مورد نظر چه دایرکتوری ها و چه فایل هایی رو ساخته از کامند زیر استفاده می کنیم</p>
+<pre><code><strong>dpkg -L nameScript</strong></code></pre>
+<p>برای نصب پکیجی با پسوند .deb می توان از کامند زیر استفاده کرد :</p>
+<pre><code><strong>dpkg -i file_debian.deb</strong></code></pre>
+<p>برای حذف کردن پکیجی با <strong>dpkg</strong> از کامند زیر استفاده می کنیم</p>
+<pre><code><strong>dpkg -r name_package</strong></code></pre>
+<p>برای اینکه متوجه شویم پکیج مورد نظر رو چه کسی نصب کرده از کامند زیر استفاده می کنیم</p>
+<pre><code><strong>dpkg -S address_directory</strong></code></pre>
+<p>در محیط گرافیکی aptitude با کامند زیر می توانید پکیج هارا (حذف ، نصب ، سرچ ، ...) کنید</p>
+<pre><code><strong>aptitude</strong></code></pre>
+<p>موفق باشید :)</p>

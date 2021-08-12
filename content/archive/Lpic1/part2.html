@@ -1,6 +1,71 @@
 ---
-title: "Part2"
-date: 2021-08-08T17:06:16+04:30
-draft: true
+title: "دوره Lpic 1 - پارت دوم"
+description: "پارت دوم دوره Lpic 1"
+date: 2021-03-17T16:43:08+04:30
+author: "Soheil"
+tags: ["Lpic", "Course", "Lpic-Course"]
+categories: ["Linux"]
+draft: false
 ---
 
+<p style="text-align: left;"><strong>part 2</strong></p>
+<p style="text-align: right;"><strong>موضوع این پارت در مورد</strong> : <strong>تنظیمات بوت</strong> و<strong> بوت کردن</strong> سیستم</p>
+<ul>
+<li><strong>bios</strong> مخفف <strong>basic input output service</strong></li>
+</ul>
+<ul>
+<li><strong>bios</strong> اولین چیزی هست که در سیستم های معماری <strong>pc</strong> ران می شود و بالا می اید</li>
+</ul>
+<ul>
+<li>بعد از اینکه <strong>bios</strong> ران می شود تمام سخت افزار های سیستم را چک می کند تا از سلامتشان باخبر شود به این عملکرد <strong>( power on self test )post</strong>  می گویند .</li>
+</ul>
+<ul>
+<li style="text-align: right;">ما در تنظیمات <strong>bios </strong>می تونیم عملکرد بایوس رو کاملا تغییر بدیم که اول کدام دیوایس رو ران کند و ...</li>
+</ul>
+<ul>
+<li style="text-align: right;">برای رفتن به <strong>bios</strong> کلیک های مختلفی بسته به جنس شرکت سیستم دارد برای <strong>مثال : </strong>اگر مارک سیستمتان دل باشد با <strong>F12</strong> به <strong>bios</strong> می توانید بروید .</li>
+</ul>
+<ul>
+<li style="text-align: right;">بعد از اینکه مراحل <strong>bios </strong>طی می شود  <strong>bios </strong>سیستم را به <strong>bootloader ( grub ) </strong>می دهد.</li>
+</ul>
+<ul>
+<li style="text-align: right;"><strong>grub </strong>با سیستم عامل های که روی هارد دیسک ما نصب هستن لیستی ایجاد می کند که ما می تونیم سیستم عامل مورد نظر خودمون رو انتخاب کنیم .</li>
+</ul>
+<ul>
+<li style="text-align: right;">برای انجام دادن تنظیمات مورد نظرمون در <strong>grub </strong>در سیستم عامل مورد نظرو باید بریم روی سیستم عامل و <strong>e </strong>را بزنیم صفحه ای برای ما باز می شود و می توانیم در انجا تنظمیات مورد نظرمون رو انجام دهیم.</li>
+</ul>
+<ul>
+<li style="text-align: right;">فایل  <strong>grub</strong> می توان در مسیر زیر یافت کرد</li>
+</ul>
+<p style="text-align: left;"><em><strong>boot/grub/grub.cfg</strong></em></p>
+<ul>
+<li style="text-align: right;"><strong>init</strong> مادر همه برنامه ها هست برای مثال ما هرچیزی را بخوایم ران کنیم <strong>init</strong> برای ما این کار را می کند که البته الان از <strong>systemd</strong> استفاده می شود که جدید تر است و با عملکرد بهتر.</li>
+</ul>
+<ul>
+<li style="text-align: right;"><strong>با کامند :</strong></li>
+</ul>
+<p style="text-align: left;"><em><strong>pstree</strong><strong> #~</strong></em></p>
+<ul>
+<li style="text-align: right;">می توانیم تمام پروسه هایی که با <strong>systemd </strong>ران شده اند را مشاهد کنیم.</li>
+</ul>
+<ul>
+<li style="text-align: right;">در لینوکس کامندی وجود دارد بنام</li>
+</ul>
+<p style="text-align: left;"><em><strong>dmesg</strong> <strong>#~</strong></em></p>
+<ul>
+<li style="text-align: right;">که از لحظه لاگ <strong>bios</strong> تا به الان تمام اتفاقاتی که در سیستم افتاده هست رو به ما نشان می دهد که به                                <strong>( kernel ring buffer ) </strong>مشهور است .</li>
+</ul>
+<ul>
+<li style="text-align: right;">در سیستم های دبیان بیس فایلی وجود دارد در مسیر :</li>
+</ul>
+<p style="text-align: left;"><em><strong>var/log/syslog</strong></em></p>
+<ul>
+<li style="text-align: right;">در سیستم های ارچ بیس فایلی وجود دارد در مسیر :</li>
+</ul>
+<p style="text-align: left;"><em><strong><strong>var/log/pacman.log</strong></strong></em></p>
+<ul>
+<li style="text-align: right;">که به ما اطلاعات بهتری با تاریخ می دهد که عملکرد بهتری می تونه داشته باشه.</li>
+</ul>
+<ul>
+<li style="text-align: right;"><strong>امیدوارم این قسمت براتون مفید بوده باشه :)</strong></li>
+</ul>

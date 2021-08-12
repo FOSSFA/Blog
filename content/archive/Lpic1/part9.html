@@ -1,6 +1,51 @@
 ---
-title: "Part9"
-date: 2021-08-08T17:06:50+04:30
-draft: true
+title: "دوره Lpic 1 - پارت نهم"
+description: "پارت نهم دوره Lpic 1"
+date: 2021-05-07T16:43:08+04:30
+author: "Soheil"
+tags: ["Lpic", "Course", "Lpic-Course"]
+categories: ["Linux"]
+draft: false
 ---
 
+<h3>موضوع این قسمت : Work in the terminal</h3>
+<p>مفهوم BASH : بش یک پردازشگر نرم افزار های ما در لینوکس است ما در لینوکس shell های زیادی داریم مانند : zsh , ...</p>
+<p>مسیر فایل های کانفیگ BASH :</p>
+<pre><code><strong>/etc/profile</strong><strong>~/.profile</strong><strong>~/.bash_profile</strong><strong>~/.bash_logout</strong></code></pre>
+<p>BASH سه بخش بسیار مهم دارد بنام :</p>
+<ol>
+<li><strong><strong>stdin</strong></strong></li>
+<li><strong>stdout</strong></li>
+<li><strong>stderr</strong></li>
+</ol>
+<p>کامند زیر صفحه را تمیز می کند :</p>
+<pre><code><strong>clear</strong></code></pre>
+<p>وقتی در روبروی پرام ما علامت دالر ( $ ) یعنی ما یک کاربر معمولی هستیم و وقتی روبروی پرام ما علامت شارپ ( # ) باشد یعنی ما یک کاربر روت هستیم .</p>
+<p>با کامند زیر می توانیم متوجه شویم چه کاربر هایی درون سیستم هستند :</p>
+<pre><code><strong>who</strong></code></pre>
+<p>برای خارج شدن از حالت روت در ترمینال از دو حالت می تونیم استفاده کنیم :</p>
+<ol>
+<li><strong>روش اول این که از کلید های Ctrl + D استفاده کنیم .</strong></li>
+<li><strong>روش دوم اینه که از کامند exit استفاده کنیم .</strong></li>
+</ol>
+<p>بعد از هر کامند علامت شارپ بزاریم بعد شارپ هرچی دستور باشه کامنت میشه مثل :</p>
+<pre><code><strong>who # ls</strong></code></pre>
+<p>در این بخش با کامندی بنام echo اشنا می شویم که هرچیزی جلوی این کامند بزاریم همان را بریمان چاپ می کند به عنوان مثال :</p>
+<pre><code><strong>echo Hello world!</strong></code></pre>
+<p>اکنون در کامند بالا <strong>Hello world را چاپ می کند </strong></p>
+<p>با دادن فلگ e- می تونیم از escaped characters ها استفاده کنیم در <strong>echo</strong> برای مثال :</p>
+<pre><code><strong>echo -e "hello\nworld!"</strong></code></pre>
+<p>با دادن n\ بعد از نوشتن <strong>hello</strong> وارد لاین بعدی میشه و <strong>world رو چاپ می کنه </strong></p>
+<p>گار می خواهیم با <strong>echo</strong> متن بلدی را چاپ کنیم می تونیم با گذاشتن علامت \ به خط بعد بریم و ادامه متن را بنویسیم به این صورت : ( و در اخر تمام این متن هارا به هم می چسباند و کنار هم چاپ می کند )</p>
+<pre><code><strong>echo Hello how are you ? \</strong><strong>&gt; i'm fine , and you ? \&gt; i'm fine thank you </strong></code></pre>
+<p>در بش علامت ( ; ) کامند هارا از هم جدا می کند برای مثال :</p>
+<pre><code><strong>echo 1 ; echo 2 </strong></code></pre>
+<p>و علامت ( || ) در بین دو کامند بزاریم اگر کامند اولی درست باشد اون را اجرا می کند و به کامند دوم نمیرود و اگر کامند اول غلط باشد کامند دوم را اجرا می کند به این صورت : در کامند های پایین کامند اول را اجرا می کند</p>
+<pre><code><strong>echo 1 || echo 2 </strong></code></pre>
+<p>در کامند های پایین به دلیل غلط بودن کامند اول کامند دوم را اجرا می کند به این صورت :</p>
+<pre><code><strong>llls || echo hello</strong></code></pre>
+<p>با کامند exec می تونیم برنامه اجرا کنیم و بعد از اتمام اون برنامه شل خودبخود بسته بشه برای مثال :</p>
+<pre><code><strong>exec terminator</strong></code></pre>
+<p>در کامند بالا یک ترمنیال باز میشه و این ترمینال که درونش این کامند رو اجرا کردیم بسته میشه</p>
+<p>با کامند pwd می تونیم مشاهده کنیم درون چه فایلی قرار داریم در ترمینال</p>
+<h3>در قسمت ۹.۲ با متغیر های محیطی ، من پیج ها ، تغییر و ست کردن متغیر هی محیطی ، history اشنا می شویم موفق باشید .</h3>
