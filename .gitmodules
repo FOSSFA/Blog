@@ -1,7 +1,3 @@
-[submodule "public"]
-	path = public
-	url = https://github.com/FOSSFA/FOSSFA.github.io.git
-	branch = Site
 [submodule "themes/bookworm-FE"]
 	path = themes/bookworm-FE
 	url = https://github.com/FOSSFA/bookworm-FE
