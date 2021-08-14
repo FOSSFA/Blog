@@ -62,7 +62,7 @@ color_primary = "#01AD9F"
 SiteTitle = "فوسفا"
 
 # -- Comment --
-Commentrepo = "FOSSFA/FOSSFA.github.io"
+Commentrepo = "FOSSFA/Blog"
 Commenttheme = "github-light"
 Commentlabel = "Comment"
 
