@@ -27,6 +27,7 @@ This Blog Uses the [BookWorm](https://github.com/gethugothemes/bookworm) ([FOSSF
 
 Document Cooming Soon..
 
+<div dir="rtl">
 
 ## مشارکت 🤝
 
@@ -36,8 +37,13 @@ Document Cooming Soon..
 
 راهنما بزودی...
 
+</div>
 <br><br>
 
 Developing with ❤️ by FOSSFA Dev Team. 2021 ©
 
+<div dir="rtl">
+
 توسعه داده شده با ❤️ توسط تیم توسعه فوسفا. 1400 ©
+
+</div>
