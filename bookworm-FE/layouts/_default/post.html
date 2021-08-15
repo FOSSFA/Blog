@@ -1,0 +1,39 @@
+<article class="card post-card">
+  {{if .Params.image}}
+  <a href="{{.Permalink}}">
+    <img loading="lazy" class="w-100 rounded" src="{{ .Params.image | absURL}}" alt="{{.Title}}">
+  </a>
+  {{end}}
+  <div class="card-body" dir="rtl">
+    <ul class="card-meta list-inline mb-2">
+      <li class="list-inline-item mb-2">
+        {{ with site.GetPage (.Params.Author | urlize | lower) }}
+        <a href="{{.Permalink}}" class="card-meta-author">
+          {{if .Params.image}}
+          <img loading="lazy" src="{{.Params.image | absURL}}" alt="{{.Title}}">
+          {{else}}
+          <img loading="lazy" src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=150&pg&d=identicon">
+          {{end}}
+          <span>{{ .Title }}</span>
+        </a>
+        {{ end }}
+      </li>
+      <li class="list-inline-item mb-2">
+        <span>{{.PublishDate.Format "January 2006"}}</span>
+      </li>
+      <li class="list-inline-item mb-2">
+        <ul class="card-meta-tag list-inline">
+          {{range .Params.tags}}
+          <li class="list-inline-item"><a href="{{site.BaseURL}}tags/{{.| urlize}}">{{.}}</a></li>
+          {{end}}
+        </ul>
+      </li>
+    </ul>
+    <h3 class="mb-3">
+      <a class="post-title" href="{{.Permalink}}">{{.Title}}</a>
+    </h3>
+    <p>{{ .Plain | truncate 150 }}</p>
+
+    <a href="{{.Permalink}}" aria-label="More on {{.Title}}">ادامه مطلب <i class="las la-angle-left"></i></a>
+  </div>
+</article>
