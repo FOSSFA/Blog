@@ -33,9 +33,7 @@ Document Cooming Soon..
 
 این وبلاگ از قالب [کرم‌کتاب](https://github.com/gethugothemes/bookworm) ([ویرایش فوسفا](https://github.com/FOSSFA/bookworm-FE)) استفاده میکند.
 
-#### چطور در وبلاگ مقاله بنویسم؟
-
-راهنما بزودی...
+#### [چطور در وبلاگ مقاله بنویسم؟](https://github.com/FOSSFA/Blog/blob/Dev/docs/FA.md)
 
 </div>
 <br><br>
