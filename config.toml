@@ -22,6 +22,8 @@ link = "plugins/line-awesome/css/line-awesome.min.css"
 link ="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v29.1.0/dist/font-face.css"
 [[params.plugins.css]] # Custom Css
 link="plugins/customCss/main.css"
+[[params.plugins.css]] # Vanilla Gallery
+link="plugins/Vanilla-Gallery/Gallery/style.css"
 
 # -- JS Plugins --
 [[params.plugins.js]]
