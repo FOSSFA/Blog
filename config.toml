@@ -23,7 +23,7 @@ link ="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v29.1.0/dist/font-face
 [[params.plugins.css]] # Custom Css
 link="plugins/customCss/main.css"
 [[params.plugins.css]] # Vanilla Gallery
-link="plugins/Vanilla-Gallery/Gallery/style.css"
+link="https://ghcdn.rawgit.org/Gnkalk/Vanilla-Gallery/main/Css-script/RO/Gallery-OCO.css"
 
 # -- JS Plugins --
 [[params.plugins.js]]
