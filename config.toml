@@ -93,6 +93,11 @@ copyright = "تمامی حقوق محفوظ است ، تحت لایسنس [FDL](
 enable = true
 expire_days = 2
 
+# -- counter -- 
+[params.counter]
+enable = true
+user = "gnkalk"
+
 # -- Social --
 
 # - telegram -
