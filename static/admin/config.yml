@@ -16,7 +16,7 @@ collections:
       - {label: "عنوان", name: "title", widget: "string"}
       - {label: "توضیحات", name: "description", widget: "string"}
       - {label: "تاریخ انتشار", name: "date", widget: "datetime"}
-      - {label: "پیوند", name: "slug", widget: "string"}
+      # - {label: "پیوند", name: "slug", widget: "string"}
       - {label: "تصویر", name: "image", widget: "image"}
       - {label: "نویسنده", name: "author", widget: "string"}
       - {label: "برچسب ها", name: "tags", widget: "list"}
