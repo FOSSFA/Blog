@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: FOSSFA/Blog
   branch: Dev
 
 media_folder: "static/images/upload"

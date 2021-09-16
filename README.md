@@ -5,6 +5,8 @@
 <br><br>
 <img src="https://img.shields.io/github/languages/code-size/fossfa/blog?style=social">
 <img src="https://img.shields.io/github/license/FOSSFA/blog?style=social">
+
+<a href="https://app.netlify.com/sites/fossfa/deploys"><img src="https://api.netlify.com/api/v1/badges/85842b06-62b3-42dd-9026-cadfbe3fe70b/deploy-status"></a>
 <br><br>
 Free and OpenSource Software Farsi Community Blog
 
