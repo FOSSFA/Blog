@@ -2,7 +2,7 @@
 title: Test
 description: Test
 date: 2021-09-16T15:00:36.629Z
-slug: Test
+slug: gnkalk
 image: images/upload/heroicgameslauncher.png
 author: Test
 tags:
