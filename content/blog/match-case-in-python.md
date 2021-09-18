@@ -1,17 +1,17 @@
 ---
-title: "ساختار سوییچ کیس وارد پایتون می شود"
+title: "!ساختار سوییچ کیس وارد پایتون می شود"
 description: "توی این مطلب قراره بهتون بگیم که سوییچ کیس ها چی هستن و اونها رو در آینده چجوری در پایتون پیاده میکنیم"
 image: "images/post/match-case-in-python/match.jpg"
 date: 2021-09-17T22:34:44+04:30
 author: "Shahriaarrr"
 tags: ["python", "match case", "python3.10"]
-categories: ["programming language, Python, News, BSD"]
+categories: ["programming", "News", "BSD"]
 draft: false
 ---
 بهه رفقا چطورین؟
 
 شهریار هستم و امیدوارم حالتون عالی عالی باشه و خوش اومدید به اولین پست من در سایت 
-FOSS.
+FOSSFA.
 
 دیروز داشتم برای خودم توی سایت های پایتونی میچرخیدم که چشمم به یک مطلب خیلی جالب خورد.داستان از این قراره که توی پایتون3.10 قراره شاهد ورود ساختار
 match
@@ -54,7 +54,6 @@ if و elif
 
 ```py
 number = int(input("Enter your number Between 1 and 7: "))
-#اگه میبینید کدم هایلایت نشده به این دلیله که این ویژگی در پایتون 3.10 میاد و این نسخه از پایتون به زودی منتشر خواهد شد
 match number:
     case 1:
         print("shanbe")
