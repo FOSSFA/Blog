@@ -1,12 +1,19 @@
 ---
-title: "!ساختار سوییچ کیس وارد پایتون می شود"
-description: "توی این مطلب قراره بهتون بگیم که سوییچ کیس ها چی هستن و اونها رو در آینده چجوری در پایتون پیاده میکنیم"
-image: "images/post/match-case-in-python/match.jpg"
-date: 2021-09-17T22:34:44+04:30
-author: "Shahriaarrr"
-tags: ["python", "match case", "python3.10"]
-categories: ["programming", "News", "BSD"]
 draft: false
+title: ساختار سوییچ کیس وارد پایتون می شود!
+description: توی این مطلب قراره بهتون بگیم که سوییچ کیس ها چی هستن و اونها رو در
+  آینده چجوری در پایتون پیاده میکنیم
+date: 2021-09-17T22:34:44+04:30
+image: images/post/match-case-in-python/match.jpg
+author: Shahriaarrr
+tags:
+  - python
+  - match case
+  - python3.10
+categories:
+  - programming
+  - News
+  - BSD
 ---
 بهه رفقا چطورین؟
 
