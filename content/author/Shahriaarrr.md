@@ -3,7 +3,7 @@ title: "Shahriaarrr"
 image: "images/author/Shahriaarrr.png"
 email: "shahriaarrr@gmail.com"
 date: 2021-09-17T22:20:39+04:30
-draft: true
+draft: false
 social:
 - icon: "la-telegram"
   link: "https://t.me/shahriaarrr12"
