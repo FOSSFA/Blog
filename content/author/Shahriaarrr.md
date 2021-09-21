@@ -13,6 +13,9 @@ social:
   link: "https://github.com/shahriaarrr"
 - icon: "la-twitter"
   link: "https://twitter.com/shahriaaarrr12"
+donate:
+  link: "https://idpay.ir/shahriaarrr313"
+  text: "☕️ یه قهوه مهمونم کن"
 ---
 ✌❤💣
 Hi, I'm Shahriar🙋‍♂️
