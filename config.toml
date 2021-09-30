@@ -27,15 +27,7 @@ link="https://ghcdn.rawgit.org/Gnkalk/Vanilla-Gallery/main/Css-script/RO/Gallery
 
 # -- JS Plugins --
 [[params.plugins.js]]
-link = "plugins/jquery/jquery.min.js"
-[[params.plugins.js]]
 link = "plugins/bootstrap/bootstrap.min.js"
-[[params.plugins.js]]
-link = "plugins/search/fuse.min.js"
-[[params.plugins.js]]
-link = "plugins/search/mark.js"
-[[params.plugins.js]]
-link = "plugins/search/search.js"
 
 # site variables
 [params.variables]
@@ -79,19 +71,11 @@ description = "مکانی برای هواداران نرم افزار آزاد"
 # -- contact form action --
 contact_form_action = "#" # contact form works with https://formspree.io
 
-# -- Search --
-search = false
-
 # -- Main Section --
 mainSections = ["blog"]
 
 # -- Footer --
 copyright = "تمامی حقوق محفوظ است ، تحت لایسنس [FDL](http://www.gnu.org/licenses/fdl-1.3.html)"
-
-# -- cookies --
-[params.cookies]
-enable = true
-expire_days = 2
 
 # -- counter -- 
 [params.counter]
