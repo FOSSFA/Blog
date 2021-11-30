@@ -16,7 +16,7 @@ Powered by [Hugo](https://gohugo.io) Static Generator, Hosted by CloudFlare Page
 
 وبلاگ جامعه نرم افزار آزاد فارسی ، فوسفا
 
-نیرو گرفته از استاتیک جنریتور [هیوگو](https://gohugo.io) ، میزبانی شده توسط کلود فلر پیجز
+قدرت گرفته از استاتیک جنریتور [هیوگو](https://gohugo.io) ، میزبانی شده توسط کلود فلر پیجز
 
 </div> <br>
 
