@@ -42,7 +42,7 @@
 **نکته** در اینجا لازمه شما از قبل گیت رو نصب داشته باشید.
 
 ```
-git clone https://github.com/yourusername/Blog
+git clone --recursive https://github.com/yourusername/Blog
 ```
 
 #### 3. وقت نوشتنه!
