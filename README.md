@@ -14,7 +14,7 @@ Powered by [Hugo](https://gohugo.io) Static Generator, Hosted by CloudFlare Page
 
 ---
 
-وبلاگ جامعه نرم افزار آزاد فارسی ، فوسفا
+تارنوشت جامعه نرم افزار آزاد فارسی ، فوسفا
 
 نیرو گرفته از استاتیک جنریتور [هیوگو](https://gohugo.io) ، میزبانی شده توسط کلود فلر پیجز
 
@@ -33,17 +33,17 @@ Document Cooming Soon..
 
 ## مشارکت 🤝
 
-این وبلاگ از قالب [کرم‌کتاب](https://github.com/gethugothemes/bookworm) ([ویرایش فوسفا](https://github.com/FOSSFA/bookworm-FE)) استفاده میکند.
+این تارنوشت از قالب [کرم‌کتاب](https://github.com/gethugothemes/bookworm) ([ویرایش فوسفا](https://github.com/FOSSFA/bookworm-FE)) استفاده میکند.
 
 #### [چطور در وبلاگ مقاله بنویسم؟](https://github.com/FOSSFA/Blog/blob/Dev/docs/FA.md)
 
 </div>
 <br><br>
 
-Developing with ❤️ by FOSSFA Dev Team. 2021 ©
+Developing with ❤️ by FOSSFA Dev Team. 2021-2022 ©
 
 <div dir="rtl">
 
-توسعه داده شده با ❤️ توسط تیم توسعه فوسفا. 1400 ©
+توسعه داده شده با ❤️ توسط تیم توسعه فوسفا. ۱۴۰۰−۱۴۰۱ ©
 
 </div>
