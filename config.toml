@@ -28,6 +28,8 @@ link="https://ghcdn.rawgit.org/Gnkalk/Vanilla-Gallery/main/Css-script/RO/Gallery
 # -- JS Plugins --
 [[params.plugins.js]]
 link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "https://lib.arvancloud.com/jquery/3.6.0/jquery.js"
 
 # site variables
 [params.variables]
@@ -62,8 +64,8 @@ Commentlabel = "Comment"
 
 # -- Logo and Favicon --
 logo = "images/logo.png"
-logo_height = "50px"
-favicon = "images/logo.png"
+logo_height = "65px"
+favicon = "images/favicon.png"
 
 # -- Meta data --
 description = "مکانی برای هواداران نرم افزار آزاد"
