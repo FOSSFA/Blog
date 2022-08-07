@@ -1,0 +1,43 @@
+
+name: check-label-then-build-and-deploy
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  checkLabel:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'post') || contains(github.event.issue.labels.*.name, 'blog')
+    steps:
+      - name: checkout the blog
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+          fetch-depth: 0
+
+
+      - uses: bit-orbit/issue-2-hugo-post@master
+        with:
+          REPO: 'Blog'
+          OWNER: 'FOSSFA'
+          PUB_DIR: 'content'
+          DEBUG: True
+          LABELS: 'post:blog'
+
+      - name: Commit files
+        run: |
+          git config --local user.email "John.Doe@gmail.com"
+          git config --local user.name "<John.Doe>"
+          git add --all
+          git commit -m "Auto commiting changes"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+
+      - name: Close Issue
+        uses: peter-evans/close-issue@v2
+        with:
+          comment: Thanks for your contribution, we added this blog post to our site :)
