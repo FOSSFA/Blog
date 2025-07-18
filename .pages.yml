@@ -20,6 +20,8 @@ content:
       - name: image
         label: Banner
         type: image
+        options:
+          path: static
       - name: description
         label: Description
         type: string
