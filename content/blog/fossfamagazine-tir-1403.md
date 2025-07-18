@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2024-02-02
+date: 2024-08-02
 title: ماهنامهٔ دوم - تیر ۱۴۰۳
 image: images/post/fossfamagazine-tir-1403.jpg
 description: دومین ماهنامهٔ فوسفا پیرامون نرم‌افزار آزاد
