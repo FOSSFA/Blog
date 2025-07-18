@@ -30,8 +30,10 @@ content:
         type: string
       - name: categories
         label: Categories
-        type: string
-        list: true
+        type: select
+        options:
+          multiple: true
+          values: [ BSD, Linux, News, Game, programming, Web ]
       - name: tags
         label: Tags
         type: string
