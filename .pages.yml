@@ -1,0 +1,34 @@
+media: static/images
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: 'content/blog'
+    view:
+      fields: [ title, description, image, date, author, tags, categories, draft ]
+    fields:
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
+      - name: date
+        label: Date
+        type: date
+      - name: title
+        label: Title
+        type: string
+      - name: image
+        label: Banner
+        type: image
+      - name: description
+        label: Description
+        type: string
+      - name: author 
+        label: Author
+        type: string
+      - name: tags
+        label: Tags
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
