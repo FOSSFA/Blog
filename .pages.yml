@@ -28,6 +28,10 @@ content:
       - name: author 
         label: Author
         type: string
+      - name: categories
+        label: Categories
+        type: string
+        list: true
       - name: tags
         label: Tags
         type: string
